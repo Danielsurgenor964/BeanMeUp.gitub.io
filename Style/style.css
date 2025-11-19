@@ -1,0 +1,185 @@
+/* ===== Global Styles ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #faf7f3;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.site-header {
+    background-color: #4e342e; /* coffee brown */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.site-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Navigation ===== */
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+    color: #ffcc80; /* warm amber */
+}
+
+/* ===== Main Content ===== */
+.container {
+    flex: 1;
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h2, h3 {
+    color: #4e342e;
+    margin-bottom: 1rem;
+}
+
+/* ===== Card Section ===== */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+    color: #4e342e;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Form Styling ===== */
+.form fieldset {
+    border: 2px solid #d7ccc8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+.form legend {
+    font-weight: bold;
+    color: #4e342e;
+    padding: 0 0.5rem;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: #a1887f;
+    box-shadow: 0 0 4px rgba(161, 136, 127, 0.4);
+}
+
+/* ===== Button ===== */
+.btn {
+    background-color: #6d4c41;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #8d6e63;
+}
+
+/* ===== Map ===== */
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: #4e342e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.site-footer a {
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .site-title {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
